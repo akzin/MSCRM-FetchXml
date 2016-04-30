@@ -11,7 +11,7 @@ Tofi9.FetchXml is a library that allows you to write and execute FetchXML querie
         .Filter(f => f.Gt("budgetamount", 5000))
         .Attributes("fullname", "companyname", "budgetamount");
 
-	// execution requires only a single-line command
+	// execution requires only one single line
     IReadOnlyList<Entity> result = query.RetrieveMultiple(organisationService);
 
     foreach(Entity entity in result)
